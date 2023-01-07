@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './component/app.component';
+import { MainFrameComponent } from './main-frame/main-frame.component';
+import { AuthorizationPageComponent } from './authorization-page/authorization-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainFrameComponent,
+    AuthorizationPageComponent
   ],
   imports: [
     BrowserModule,

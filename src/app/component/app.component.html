@@ -1,0 +1,9 @@
+<!--<h1>component</h1>-->
+
+<router-outlet></router-outlet>
+<ng-container *ngIf="userAuthorized">
+  <app-main-frame></app-main-frame>
+</ng-container>
+<ng-container *ngIf="!userAuthorized">
+  <app-authorization-page></app-authorization-page>
+</ng-container>
