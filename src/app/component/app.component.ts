@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'en8-my-front';
-  // userAuthorized: boolean = false
-  userAuthorized: boolean = true
+  userAuthorized: boolean = false
+  // userAuthorized: boolean = true
 }

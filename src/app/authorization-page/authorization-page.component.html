@@ -1,1 +1,12 @@
-<p>authorization-page works!</p>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+  <label for="login">Login: </label>
+  <input id="login" type="text" formControlName="login">
+  <p></p>
+  <label for="password">Password: </label>
+  <input id="password" type="password" formControlName="password">
+  <p></p>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+</form>
