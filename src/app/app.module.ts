@@ -6,6 +6,7 @@ import {AppComponent} from './component/app.component';
 import {MainFrameComponent} from './main-frame/main-frame.component';
 import {AuthorizationPageComponent} from './authorization-page/authorization-page.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ReactiveFormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
